@@ -1,129 +1,104 @@
+# Syllabus: AI-Augmented Full-Stack Blitz (Java & Angular)
 
-# AI-Augmented Full-Stack "Blitz" Program
+## Program Overview
 
-**Target Audience:** Senior Java Developers & Senior Angular Developers
-
-**Core Strategy:** AI as a "Context Bridge" via Spec-Driven Development (SDD)
-
-**Toolchain:** GitHub Copilot, Google ADK (Java), Google Antigravity IDE
-
+This program uses AI as a **Context Bridge**. Developers will focus on **Spec-Driven Development (SDD)** to describe system intent in natural language, allowing AI agents (GitHub Copilot, Google ADK, and Google Antigravity) to handle the syntax-heavy implementation across the unfamiliar stack.
 
 ---
 
-## 2. 6-Week "Cross-Stack" Syllabus
+## Week 1 – Foundations of Generative AI (Intro to ADK)
 
-| Week | Focus | Artifact/Project | Key Resource |
-| --- | --- | --- | --- |
-| **1** | **AI Foundations** | Project `Constitution.md` | ([https://www.cloudskillsboost.google/course_templates/952](https://www.google.com/search?q=https://www.cloudskillsboost.google/course_templates/952)) |
-| **2** | **Copilot & TDD** | Fail-First Test Suite | ([https://learn.microsoft.com/en-us/training/modules/develop-unit-tests-with-github-copilot/](https://www.google.com/search?q=https://learn.microsoft.com/en-us/training/modules/develop-unit-tests-with-github-copilot/)) |
-| **3** | **SDD Scaffolding** | `SPEC.md` Driven Scaffolding | ([https://learn.microsoft.com/en-us/training/modules/spec-driven-development-github-spec-kit-enterprise-developers/](https://learn.microsoft.com/en-us/training/modules/spec-driven-development-github-spec-kit-enterprise-developers/)) 
-
- |
-| **4** | **The Bridge** | Controller-to-Service Mapping | ([https://developers.google.com/solutions/learn/agentic-barista](https://developers.google.com/solutions/learn/agentic-barista)) |
-| **5** | **Agentic Refactoring** | Legacy Monolith Modernization | [Optimizing Angular with Antigravity](https://medium.com/@davidepassafaro/optimizing-angular-development-with-google-antigravity-3585495ce120) |
-| **6** | **Multi-Agent Sys.** | Java `SequentialAgent` Pipeline | ([https://codelabs.developers.google.com/adk-java-getting-started](https://codelabs.developers.google.com/adk-java-getting-started)) 
-
- |
+* **Learning Focus**: GenAI basics, LLMs, agents  
+* **Google Cloud Skills Boost**: [Introduction to Generative AI](https://www.cloudskillsboost.google/paths/118)  
+* **Microsoft Learn**: [Introduction to Generative AI and Agents](https://learn.microsoft.com/en-us/training/modules/introduction-to-generative-ai/)
 
 ---
 
-## 3. The Cross-Stack Toolkit Repo Blueprint
+## Week 2 – LLMs and Prompt Engineering (LLM Agent usage)
 
-* **Prompt:** "@workspace Analyze {java_controller_path}. Generate an Angular service using HttpClient and RxJS. Map all Java DTOs to TS Interfaces using camelCase naming." 
-
-
-* **Prompt:** "Refactor this Angular component to use Signals, ensuring synchronization with the Java backend's real-time events." 
-
-
-
-# FEATURE: [Name]
-
-## Backend (Java/Spring Boot)
-
-* DTO Schema: [Markdown list of fields]
-* API Contract:
-
-## Frontend (Angular)
-
-* Model:
-* UI Logic:
-
-* **Strategy:** Use `/tests` in Copilot to generate Jasmine/Jest stubs before the code exists, then let the agent "fill in" the implementation to satisfy the tests .
+* **Learning Focus**: LLM architecture, prompt tuning  
+* **Google Cloud Skills Boost**: [Introduction to Large Language Models](https://www.cloudskillsboost.google/paths/119)  
+* **Microsoft Learn**: [Prompt Engineering Fundamentals](https://learn.microsoft.com/en-us/training/modules/introduction-to-prompt-engineering/)
 
 ---
 
-## 4. The 4-Hour/Week Chronogram
+## 6-Week Curriculum
 
-| Hour | Activity | Goal | Tools |
-| --- | --- | --- | --- |
-| **1h** | **Research** | Master a specific stack pattern (e.g., RxJS or JPA) 
+### Week 1: AI Foundations & Mental Models
 
- | Microsoft Learn / Google Skills Boost |
-| **1h** | **SDD Design** | Draft `SPEC.md` and review with AI Agent 
-
- | VS Code + GitHub Spec Kit |
-| **2h** | **Applied Coding** | Execute the "Bridge" or "Refactor Mission" 
-
- | IntelliJ + Google Antigravity |
+* **Topics:** Prompt engineering for architects, crafting System Instructions, and the CRAFT (Context, Role, Action, Format, Target) prompting method.
+* **Core Skills:** Establishing a project `constitution.md` to define non-negotiable architectural standards.
+* **Resource:** *(Link validation in progress or replace with official course if unavailable.)*
 
 ---
 
-## 5. Real-Case Library & Evaluation Rubric
+### Week 2: GitHub Copilot & Agentic TDD
 
-### Real Case: Self-healing API Integration
-
-**Challenge:** Renaming a Java field causes frontend breakage.
-
-**Solution:** A "Repair Agent" in Antigravity scans the repository, detects the mismatch in the TypeScript interfaces, and updates the Angular services to match the new Java schema.
-
-### Evaluation Rubric
-
-1. **Context Synchronization:** Do the Java DTO and Angular Interface share 100% naming parity? 
-
-
-2. **Test Verification:** Does the AI-generated code pass both JUnit and Jasmine suites? 
-
-
-3. **Architectural Alignment:** Does the code follow the `constitution.md` (e.g., logic only in services)? 
-
-
+* **Topics:** Red-Green-Refactor with AI, using `@workspace` for global repository context, and generating tests for legacy code.
+* **Core Skills:** Prompting Copilot to generate 100% test coverage for logic that hasn't been written yet.
+* **Resource:** [Develop Unit Tests with GitHub Copilot](https://learn.microsoft.com/en-us/training/modules/develop-unit-tests-with-github-copilot/)
 
 ---
 
-## 6. Implementation Example: Java ADK Bridge Agent
+### Week 3: Spec-Driven Development (SDD)
 
-This Java snippet demonstrates a `SequentialAgent` that acts as the "Bridge" between stacks.
+* **Topics:** Writing `SPEC.md` and `PLAN.md` files, using the GitHub Spec Kit, and scaffolding modules via intent.
+* **Core Skills:** Converting high-level business requirements into agent-executable implementation tasks.
+* **Resource:** [Spec-Driven Development with GitHub Spec Kit](https://learn.microsoft.com/en-us/training/modules/spec-driven-development-github-spec-kit-enterprise-developers/)
 
-```java
-import com.google.adk.agents.LlmAgent;
-import com.google.adk.agents.workflow.SequentialAgent;
-import java.util.List;
+---
 
-public class CrossStackBridge {
-    public static SequentialAgent createBridge() {
-        LlmAgent javaAnalyst = LlmAgent.builder()
-           .name("JavaAnalyst")
-           .model("gemini-2.0-flash")
-           .instruction("Analyze the Spring Boot Controller in {source}. Identify DTO structures.")
-           .outputKey("api_metadata")
-           .build();
+### Week 4: The Cross-Stack Bridge
 
-        LlmAgent angularGenerator = LlmAgent.builder()
-           .name("AngularGenerator")
-           .model("gemini-2.0-flash")
-           .instruction("Using {api_metadata}, generate an Angular Service with RxJS Observables.")
-           .outputKey("frontend_code")
-           .build();
+* **Topics:** Generating Angular Services from Spring Boot Controllers; generating Spring Entities from UI data models.
+* **Core Skills:** Automating DTO-to-Interface mapping and ensuring API contract parity across stacks.
+* **Resource:** [Agentic Barista – Google Developer Solutions](https://developers.google.com/solutions/learn/agentic-barista)
 
-        return SequentialAgent.builder()
-           .name("FullStack-Bridge-Pipeline")
-           .sub_agents(List.of(javaAnalyst, angularGenerator))
-           .build();
-    }
-}
+---
 
-```
+### Week 5: Agentic Refactoring with Antigravity
 
-*Note: This pipeline ensures the backend analyst runs before the frontend generator, maintaining strict data contract parity .*
+* **Topics:** Refactoring monolithic Java to modular services, updating Angular versions (e.g., to Signals/Standalone), and autonomous "missions".
+* **Core Skills:** Using Antigravity's integrated browser for real-time UI verification of refactored code.
+* **Resource:** [Optimizing Angular Development with Google Antigravity](https://medium.com/@davidepassafaro/optimizing-angular-development-with-google-antigravity-3585495ce120)
 
-I've combined all artifacts into this single plan document. You can now commit this to your repository and begin the 6-week program. Let me know if you need more specific implementation details!
+---
+
+### Week 6: Multi-Agent Systems (Google ADK)
+
+* **Topics:** Orchestrating `SequentialAgent` and `ParallelAgent` workflows in Java.
+* **Core Skills:** Building an assembly-line pipeline where one agent updates the Java backend and a sub-agent synchronizes the Angular frontend.
+* **Resource:** [Google ADK Java Codelab](https://codelabs.developers.google.com/adk-java-getting-started)
+
+---
+
+## Graduation Capstone Projects
+
+### 1. The AI-Powered Barista System
+
+* **Objective:** Build a multimodal coffee ordering app where users can upload photos for recommendations.
+* **Stack:** Angular + Genkit + Vertex AI (Gemini)
+* **Key Feature:** Implement a "Human-in-the-loop" order submission where the agent pauses for a manual confirmation button in the UI before executing a Java tool call.
+
+---
+
+### 2. The Legacy "Refactor Mission"
+
+* **Objective:** Modernize a legacy Java codebase (e.g., EJB/Struts) into a Spring Boot API and Angular frontend.
+* **Stack:** Java Spring Boot, Angular Signals, Google Antigravity
+* **Key Feature:** Use Antigravity to assign a "Refactor Mission" that updates legacy UI components to modern Angular patterns while maintaining 100% functional parity verified by browser recordings.
+
+---
+
+### 3. Self-Healing Multi-Agent Dashboard
+
+* **Objective:** Create a dashboard where backend schema changes automatically trigger frontend interface updates.
+* **Stack:** Google ADK (Java), Angular, GitHub Copilot Agent Mode
+* **Key Feature:** Build a `SequentialAgent` in Java that:
+  1. Extracts a new field requirement from a `SPEC.md`.
+  2. Updates the Java Entity and Controller.
+  3. Triggers a sub-agent to update the Angular Service and Interface with the new types.
+
+---
+
+Let me know if you'd like a downloadable version or if you’d like me to convert this into a `.pptx` or `.zip` for Agent Mode.
