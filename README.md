@@ -1,104 +1,118 @@
-# Syllabus: AI-Augmented Full-Stack Blitz (Java & Angular)
+# 🚀 AI-Augmented Engineering: Java Backend Training Plan
 
-## Program Overview
+## Objective
+Transition the backend team from **“using AI tools”** to **“AI-Augmented Engineering”**, establishing a standardized workflow for:
 
-This program uses AI as a **Context Bridge**. Developers will focus on **Spec-Driven Development (SDD)** to describe system intent in natural language, allowing AI agents (GitHub Copilot, Google ADK, and Google Antigravity) to handle the syntax-heavy implementation across the unfamiliar stack.
-
----
-
-## Week 1 – Foundations of Generative AI (Intro to ADK)
-
-* **Learning Focus**: GenAI basics, LLMs, agents  
-* **Google Cloud Skills Boost**: [Introduction to Generative AI](https://www.cloudskillsboost.google/paths/118)  
-* **Microsoft Learn**: [Introduction to Generative AI and Agents](https://learn.microsoft.com/en-us/training/modules/introduction-to-generative-ai/)
+- GitHub Codespaces
+- Spec-Driven Development
+- Agentic Modernization
 
 ---
 
-## Week 2 – LLMs and Prompt Engineering (LLM Agent usage)
+## 🟢 Level 100: The Deterministic Environment
 
-* **Learning Focus**: LLM architecture, prompt tuning  
-* **Google Cloud Skills Boost**: [Introduction to Large Language Models](https://www.cloudskillsboost.google/paths/119)  
-* **Microsoft Learn**: [Prompt Engineering Fundamentals](https://learn.microsoft.com/en-us/training/modules/introduction-to-prompt-engineering/)
+### Focus
+Eliminating *“it works on my machine”* and establishing the infrastructure required for AI agents.
 
----
+The foundation of AI augmentation is a **standardized, containerized environment**.  
+If the AI (or a teammate) cannot deterministically run the code, automation fails.
 
-## 6-Week Curriculum
+### Resources
 
-### Week 1: AI Foundations & Mental Models
+| Resource | Type | Est. Time | Description |
+|--------|------|-----------|-------------|
+| Introduction to GitHub Codespaces | 🎓 Course | 1 Hour | Start here. Learn to configure `devcontainer.json`. Crucial because AI agents work best in standardized containers, not messy local machines. |
+|  | 📄 Guide | 30 Min | Official guide on configuring JDK, Maven/Gradle, and VS Code extensions inside the container so the AI has full context. |
+| GitHub Copilot Fundamentals | 🎓 Course | 1 Hour | Baseline theory on how GenAI works to manage expectations regarding hallucinations. |
+|  | 📺 Video | 15 Min | Java-specific patterns: generating boilerplate, unit tests, and explaining legacy code. |
 
-* **Topics:** Prompt engineering for architects, crafting System Instructions, and the CRAFT (Context, Role, Action, Format, Target) prompting method.
-* **Core Skills:** Establishing a project `constitution.md` to define non-negotiable architectural standards.
-* **Resource:** *(Link validation in progress or replace with official course if unavailable.)*
-
----
-
-### Week 2: GitHub Copilot & Agentic TDD
-
-* **Topics:** Red-Green-Refactor with AI, using `@workspace` for global repository context, and generating tests for legacy code.
-* **Core Skills:** Prompting Copilot to generate 100% test coverage for logic that hasn't been written yet.
-* **Resource:** [Develop Unit Tests with GitHub Copilot](https://learn.microsoft.com/en-us/training/modules/develop-unit-tests-with-github-copilot/)
+**Links**
+- https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/setting-up-your-java-project-for-codespaces  
+- https://learn.microsoft.com/en-us/shows/github-copilot-series/copilot-for-java
 
 ---
 
-### Week 3: Spec-Driven Development (SDD)
+## 🟡 Level 200: Operational Competence & Prompt Engineering
 
-* **Topics:** Writing `SPEC.md` and `PLAN.md` files, using the GitHub Spec Kit, and scaffolding modules via intent.
-* **Core Skills:** Converting high-level business requirements into agent-executable implementation tasks.
-* **Resource:** [Spec-Driven Development with GitHub Spec Kit](https://learn.microsoft.com/en-us/training/modules/spec-driven-development-github-spec-kit-enterprise-developers/)
+### Focus
+Moving beyond *“chatting with AI”* to **structured engineering prompts** and **automated testing**.
 
----
+Java developers must learn to *speak the language of the model* using:
+- Context (files, folders, tabs)
+- Constraints (frameworks, Java versions, build tools)
 
-### Week 4: The Cross-Stack Bridge
+### Resources
 
-* **Topics:** Generating Angular Services from Spring Boot Controllers; generating Spring Entities from UI data models.
-* **Core Skills:** Automating DTO-to-Interface mapping and ensuring API contract parity across stacks.
-* **Resource:** [Agentic Barista – Google Developer Solutions](https://developers.google.com/solutions/learn/agentic-barista)
+| Resource | Type | Est. Time | Description |
+|--------|------|-----------|-------------|
+| Prompt Engineering with Copilot | 🎓 Course | 1 Hour | Critical skill. Learn the **3S framework** (Simple, Specific, Short) and how to manage the context window. |
+| Copilot for SDLC | 🎓 Path | 6 Hours | Deep dive into full SDLC integration of Copilot. |
+| Diffblue Cover | 🛠️ Tool | 45 Min | Autonomous Java unit-test generation by analyzing bytecode. Essential for protecting legacy code before refactoring. |
+| AI-Driven Test Analysis | 📺 Video | 10 Min | Using AI to analyze behavior and generate edge-case tests, not just line coverage. |
 
----
-
-### Week 5: Agentic Refactoring with Antigravity
-
-* **Topics:** Refactoring monolithic Java to modular services, updating Angular versions (e.g., to Signals/Standalone), and autonomous "missions".
-* **Core Skills:** Using Antigravity's integrated browser for real-time UI verification of refactored code.
-* **Resource:** [Optimizing Angular Development with Google Antigravity](https://medium.com/@davidepassafaro/optimizing-angular-development-with-google-antigravity-3585495ce120)
-
----
-
-### Week 6: Multi-Agent Systems (Google ADK)
-
-* **Topics:** Orchestrating `SequentialAgent` and `ParallelAgent` workflows in Java.
-* **Core Skills:** Building an assembly-line pipeline where one agent updates the Java backend and a sub-agent synchronizes the Angular frontend.
-* **Resource:** [Google ADK Java Codelab](https://codelabs.developers.google.com/adk-java-getting-started)
+**Links**
+- https://learn.microsoft.com/en-us/training/paths/accelerate-app-development-using-github-copilot/  
+- https://docs.diffblue.com/get-started/get-started/get-started-cover-plugin  
+- https://www.youtube.com/watch?v=N8MUSOk-A08
 
 ---
 
-## Graduation Capstone Projects
+## 🟠 Level 300: Advanced Workflows & Modernization
 
-### 1. The AI-Powered Barista System
+### Focus
+Using **AI Agents** to refactor legacy systems and manage security.
 
-* **Objective:** Build a multimodal coffee ordering app where users can upload photos for recommendations.
-* **Stack:** Angular + Genkit + Vertex AI (Gemini)
-* **Key Feature:** Implement a "Human-in-the-loop" order submission where the agent pauses for a manual confirmation button in the UI before executing a Java tool call.
+At this stage, developers stop typing code and start **orchestrating change**.
 
----
+### Resources
 
-### 2. The Legacy "Refactor Mission"
+| Resource | Type | Est. Time | Description |
+|--------|------|-----------|-------------|
+| Java App Modernization with Copilot | 📄 Guide | 1 Hour | Using *Agent Mode* to upgrade Java 8 → 21, fix breaking changes, and migrate Spring Boot versions. |
+| Rewrite with New Java Syntax | 📄 Blog | 15 Min | Modernize verbose code (anonymous classes → lambdas, records, streams). |
+| Spring AI & ChatClient | 📺 Video | 30 Min | Moving from using AI to building AI apps. Learn ChatClient API for LLM integration. |
+| GitHub Advanced Security | 🎓 Course | 2 Hours | AI-powered scanning (CodeQL) to find vulnerabilities missed by traditional linters. |
 
-* **Objective:** Modernize a legacy Java codebase (e.g., EJB/Struts) into a Spring Boot API and Angular frontend.
-* **Stack:** Java Spring Boot, Angular Signals, Google Antigravity
-* **Key Feature:** Use Antigravity to assign a "Refactor Mission" that updates legacy UI components to modern Angular patterns while maintaining 100% functional parity verified by browser recordings.
-
----
-
-### 3. Self-Healing Multi-Agent Dashboard
-
-* **Objective:** Create a dashboard where backend schema changes automatically trigger frontend interface updates.
-* **Stack:** Google ADK (Java), Angular, GitHub Copilot Agent Mode
-* **Key Feature:** Build a `SequentialAgent` in Java that:
-  1. Extracts a new field requirement from a `SPEC.md`.
-  2. Updates the Java Entity and Controller.
-  3. Triggers a sub-agent to update the Angular Service and Interface with the new types.
+**Links**
+- https://devblogs.microsoft.com/java/java-on-visual-studio-code-update-may-2024/  
+- https://www.youtube.com/watch?v=daPwd4DnEfA  
+- https://github.com/services/ghas-developer-training
 
 ---
 
-Let me know if you'd like a downloadable version or if you’d like me to convert this into a `.pptx` or `.zip` for Agent Mode.
+## 🔴 Level 400: The Future (Spec-Driven & AI-Native)
+
+### Focus
+Changing the **SDLC paradigm entirely**.
+
+Moving from **“Vibe Coding” (guessing)** to **“Spec-Driven Development” (architecting)**.
+
+### Resources
+
+| Resource | Type | Est. Time | Description |
+|--------|------|-----------|-------------|
+| GitHub Spec Kit | 🛠️ Repo | 2 Hours | Spec-Driven Development toolkit. Learn `constitution.md` and `/speckit.plan` to generate code from specs, not vibes. |
+| Spec-Driven Development Theory | 📄 Article | 20 Min | Why vibe coding fails in enterprise environments and why specs become the source of truth. |
+| Cursor AI IDE | 📄 Guide | 45 Min | IDE that indexes the entire codebase for superior context awareness. |
+| OpenAPI → Java with AI | 📄 Tutorial | 30 Min | Generate Java scaffolding directly from Swagger/OpenAPI specs to enforce contract compliance. |
+
+**Links**
+- https://github.com/github/spec-kit  
+- https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/  
+- https://www.codecademy.com/article/how-to-use-cursor-ai-a-complete-guide-with-practical-examples  
+
+---
+
+## 🛠️ Recommended Tool Stack
+
+- **IDE:** VS Code (Java Extension Pack) **or** Cursor  
+- **Environment:** Docker Desktop + Dev Containers (`devcontainer.json`)  
+- **Agent:** GitHub Copilot (Business / Enterprise)  
+- **Testing:** Diffblue Cover (legacy & regression) + CodiumAI (new logic)  
+- **AI Framework:** Spring AI (RAG / LLM applications)  
+- **Methodology:** GitHub Spec Kit (Spec-Driven Development)
+
+---
+
+> **Outcome:**  
+> Engineers evolve from *AI users* → *AI-augmented system designers* with deterministic environments, specs as contracts, and agents as collaborators.
