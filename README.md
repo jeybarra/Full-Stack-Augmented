@@ -98,6 +98,10 @@ The objective is to transition from *traditional backend development* to **AI-au
 
 **The Challenge:**
 Choose a domain (e.g., Smart Travel, Corporate Knowledge Base, Recipe Vault) and build a production-grade application.
+Example application:
+* https://github.com/AlucardMZT/AshopBack
+* https://github.com/AlucardMZT/AshopUI
+  
 
 **Required Specs:**
 
