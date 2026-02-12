@@ -13,6 +13,31 @@ By the end of this self-paced program, you will not just "learn" about full-stac
 **This course is self-directed.** You are responsible for managing your own learning timeline (est. 8–10 hrs/week) and coordinating with colleagues for your review.
 
 ---
+## 💰 Free Tier & Usage Notes
+
+### Get Copilot for Free
+
+For any GitHub user you can get copilot for free. It requires no credit card and no application.
+
+1. **Sign In:** Log into your GitHub account on the web.
+2. **IDE Setup:** Open VS Code or Visual Studio.
+3. **Install Extension:** Search the Marketplace for "GitHub Copilot."
+4. **Activate:** Click the profile icon in the bottom left of your IDE and select **"Sign in with GitHub to use Copilot."**
+5. **Status:** You will be automatically enrolled in the **Copilot Free** plan.
+
+- **Important:** As of 2026, GitHub offers a **Free Tier** that includes **2,000 code completions** and **50 Chat/Premium requests** per month.
+
+#### Best Practices to use the Free Tier
+* **Use "Inline Completions" for boilerplate**, but **save your "Chat" requests for complex refactoring** to avoid hitting the 50-request cap on the Free plan.
+* Completions are the "ghost" suggestions that appear as you type. **Each time you press Tab to accept a suggestion, it counts.**
+* **Turn Off "Auto-Trigger":** By default, Copilot suggests code constantly. Go to your IDE settings and set it to manual or use a keyboard shortcut to trigger suggestions. This prevents "wasting" completions on simple things you could have typed yourself (like a public class declaration).
+* Try to **trigger suggestions specifically for complex logic** rather than simple boilerplate.
+* **Pause When Not Coding**: If you are just reading code or writing documentation in Markdown, disable Copilot via the status bar icon. This stops accidental completions from eating your 2,000-count quota.
+* **Plan Before You Chat**: Never ask "Why isn't this working?" without context. That costs one request. Instead, gather your error logs and the relevant code first.
+* **Use Multi-Turn Chats Wisely**: A "session" usually counts per prompt. If you can get the answer in one long, well-structured prompt (e.g., "Review this Java controller for security AND generate a unit test"), you save a request compared to asking for them separately.
+* **Avoid "Agent Mode" for Small Fixes**: The Coding Agent (which edits multiple files) is powerful but can consume multiple "credits" in one go. Stick to standard Chat for simple refactoring.
+
+---
 
 ## 🎯 Program Mission
 
