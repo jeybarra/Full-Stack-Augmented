@@ -25,7 +25,7 @@ Use the table below to rate and provide constructive feedback.
 
 | Criteria | Rating (5) | Comments |
 | :--- | :--- | :--- |
-| **Technical Knowledge**<br>*(Spring Boot, Angular, REST, Async patterns)* | | | Perfecto
+| **Technical Knowledge**<br>*(Spring Boot, Angular, REST, Async patterns)* | 5| 5|
 | **AI Workflow**<br>*(Did they explain how they used Copilot/AI to speed up the build?)* | | | Perfecto
 | **Storytelling**<br>*(Did they clearly explain the problem and their solution?)* | | | Perfecto
 | **English & Clarity**<br>*(Professional communication style)* | | | Perfecto
