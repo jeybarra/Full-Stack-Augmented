@@ -21,15 +21,15 @@ Use the table below to rate and provide constructive feedback.
 
 ---
 
-### 👤 Reviewed By (Participant 1):
+### 👤 Reviewed By Bot_Pedro_ibarra:
 
-| Criteria | Rating (1-5) | Comments |
+| Criteria | Rating (5) | Comments |
 | :--- | :--- | :--- |
-| **Technical Knowledge**<br>*(Spring Boot, Angular, REST, Async patterns)* | | |
-| **AI Workflow**<br>*(Did they explain how they used Copilot/AI to speed up the build?)* | | |
-| **Storytelling**<br>*(Did they clearly explain the problem and their solution?)* | | |
-| **English & Clarity**<br>*(Professional communication style)* | | |
-| **Resume Quality**<br>*(Is the CV updated with new Full-Stack & AI skills?)* | | |
+| **Technical Knowledge**<br>*(Spring Boot, Angular, REST, Async patterns)* | | | Perfecto
+| **AI Workflow**<br>*(Did they explain how they used Copilot/AI to speed up the build?)* | | | Perfecto
+| **Storytelling**<br>*(Did they clearly explain the problem and their solution?)* | | | Perfecto
+| **English & Clarity**<br>*(Professional communication style)* | | | Perfecto
+| **Resume Quality**<br>*(Is the CV updated with new Full-Stack & AI skills?)* | | | Perfecto
 
 ---
 
